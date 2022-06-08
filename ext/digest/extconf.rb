@@ -17,10 +17,10 @@ def have_func!(header, *args)
   exit 1 unless have_func(*args, header)
 end
 
-cflags '-std=c11'
+#cflags '-std=c11'
 cflags '-Wall'
 cflags '-Wextra'
-cflags '-fvisibility=hidden'
+#cflags '-fvisibility=hidden'
 
 have_header! 'ruby/digest.h'
 have_header! 'stdio.h'
